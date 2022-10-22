@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg_styles {
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 99vh;
+}
+.position_bg{
+    padding: 10px;
+}
+.runAdd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10;
+    margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(207, 207, 207);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 8px #f9f8fc;
 }
 
-.App-link {
-  color: #61dafb;
+#foot {
+    position: relative;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px #d9d4e7;
+    width: 200px;
+    height: 65px;
+    background-color: #d9d4e7;
+    animation-duration: 5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-os {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: auto;
+    background-color: red;
+    border: 2.5px solid #0e172c;
+    transition: background-color 2.2s;
+    transition-duration: 3s;
+    transition: 1.5s;
+}
+
+.button-os:hover {
+    position: absolute;
+    top: 30px;
+    background-color: green;
+}
+
+.button-os a:hover {
+    letter-spacing: 5px;
 }
